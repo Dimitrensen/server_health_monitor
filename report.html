@@ -1,0 +1,13 @@
+def generate_html_report(cpu_usage, mem_usage, disk_usage, net_usage):
+    report = f"""
+    <html>
+    <body>
+        <h1>Server Health Report</h1>
+        <p>CPU Usage: {cpu_usage}</p>
+        <p>Memory Usage: {mem_usage}</p>
+        <p>Disk Usage: {disk_usage}</p>
+        <p>Network Usage: {net_usage}</p>
+    </body>
+    </html>
+    """
+    return report
