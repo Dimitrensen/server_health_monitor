@@ -3,6 +3,8 @@ FROM python:3.11-slim
 WORKDIR /app
 
 COPY index.html /app/index.html
+COPY cpu_monitor.sh /app/cpu_monitor.sh  # Include your CPU monitor script
+RUN chmod +x /app/cpu_monitor.sh  # Make the script executable
 
 EXPOSE 8000
 
